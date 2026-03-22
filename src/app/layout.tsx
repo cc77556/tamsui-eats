@@ -73,6 +73,9 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="border-t border-[var(--card-border)] mt-12">
+          <div className="bg-amber-50 dark:bg-amber-900/30 py-2 text-center text-xs text-amber-800 dark:text-amber-200">
+            📅 店家資訊更新：2026-03-22 | 營業時間及餐點可能變動，建議出發前電話確認
+          </div>
           <div className="max-w-6xl mx-auto px-4 py-8 text-center text-sm text-[var(--muted)]">
             <p className="mb-2">{siteConfig.disclaimer}</p>
             <div className="flex justify-center gap-4 mb-2">
