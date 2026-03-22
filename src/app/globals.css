@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #1a1412;
+  --color-warm-50: #FFF7ED;
+  --color-warm-100: #FFEDD5;
+  --color-warm-200: #FED7AA;
+  --color-warm-500: #F97316;
+  --color-warm-600: #EA580C;
+  --color-warm-700: #C2410C;
+  --color-warm-800: #9A3412;
+  --color-warm-900: #7C2D12;
+  --color-price-cheap: #22C55E;
+  --color-price-mid: #F59E0B;
+  --color-price-expensive: #EF4444;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #FFF8F0;
+  --foreground: #292524;
+  --card-bg: #FFFFFF;
+  --card-border: #FED7AA;
+  --muted: #78716C;
+  --header-bg: #FFFFFF;
+}
+
+.dark {
+  --background: #1a1412;
+  --foreground: #F5F5F4;
+  --card-bg: #292524;
+  --card-border: #44403C;
+  --muted: #A8A29E;
+  --header-bg: #1c1917;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Smooth transitions for theme */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+/* Override transition on animations */
+.animate-bounce, [class*="animate-"] {
+  transition: none;
 }

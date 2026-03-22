@@ -1,0 +1,10 @@
+[
+  {"id": "snack", "name": "小吃", "icon": "🍢", "color": "#EF4444"},
+  {"id": "restaurant", "name": "餐廳", "icon": "🍽️", "color": "#3B82F6"},
+  {"id": "cafe", "name": "咖啡廳", "icon": "☕", "color": "#92400E"},
+  {"id": "dessert", "name": "甜點", "icon": "🍰", "color": "#EC4899"},
+  {"id": "drinks", "name": "飲料", "icon": "🧋", "color": "#8B5CF6"},
+  {"id": "seafood", "name": "海鮮", "icon": "🦐", "color": "#0891B2"},
+  {"id": "noodles", "name": "麵食", "icon": "🍜", "color": "#F59E0B"},
+  {"id": "hotpot", "name": "火鍋", "icon": "🫕", "color": "#DC2626"}
+]
