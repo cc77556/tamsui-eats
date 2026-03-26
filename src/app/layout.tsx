@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Noto_Sans_TC } from "next/font/google";
 import Link from "next/link";
@@ -45,10 +46,12 @@ export default function RootLayout({
             `,
           }}
         />
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J3QL25L9N"></script>
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3J3QL25L9N");` }} />
-      </head>
+</head>
       <body className="min-h-screen flex flex-col">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-3J3QL25L9N" strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3J3QL25L9N");`}
+        </Script>
         {/* Header */}
         <header className="sticky top-0 z-50 bg-[var(--header-bg)] border-b border-[var(--card-border)] backdrop-blur-sm bg-opacity-90">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
